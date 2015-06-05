@@ -23,6 +23,11 @@
                     templateUrl: "/dist/resources/views/home.html",
                     controller: 'HomeController'
                 })
+                .state('base.plugins', {
+                    url: "/plugins",
+                    templateUrl: "/dist/resources/views/plugins.html",
+                    controller: 'PluginsController'
+                })
                 .state('base.sobre', {
                     url: "/sobre",
                     templateUrl: "/dist/resources/views/sobre.html",
