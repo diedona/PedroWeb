@@ -2,8 +2,9 @@
     
     var app = angular.module('PedroWeb.PluginsController', []);
     app.controller('PluginsController', [
-        '$scope',
-        function($scope) {
+        '$scope', '$rootScope',
+        function($scope, $rootScope) {
+            $rootScope.menu = "plugins";
             $scope.plugins = [
                 { Nome: "Roleta", Descricao: "Pra zuar", IsActive: true },
                 { Nome: "Google", Descricao: "Pra zuar tbem", IsActive: true },

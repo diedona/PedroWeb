@@ -2,8 +2,10 @@
     
     var app = angular.module('PedroWeb.RoletaController', []);
     app.controller('RoletaController',[
-        '$scope', 'CtrlOptions',
-        function($scope, CtrlOptions) {
+        '$scope', '$rootScope', 'CtrlOptions',
+        function($scope, $rootScope, CtrlOptions) {
+            
+            $rootScope.menu = "roleta";
             
             if(CtrlOptions.action == "list") {
                 $scope.roletas = [

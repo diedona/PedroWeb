@@ -10,13 +10,19 @@
             <img src="resources/img/logo.png" />
         </a>
     </li>
-    <li class="bold">
-        <a class="waves-effect waves-teal" href="/dist/#/plugins">Plugins</a>
+    <li class="bold" ng-class="{active: $root.menu == 'home'}">
+        <a class="waves-effect waves-teal" href="/dist/#/home">Home</a>
     </li>    
-    <li class="bold">
+    <li class="bold" ng-class="{active: $root.menu == 'plugins'}">
+        <a class="waves-effect waves-teal" href="/dist/#/plugins">Plugins</a>
+    </li>
+    <li class="bold" ng-class="{active: $root.menu == 'roleta'}">
         <a class="waves-effect waves-teal" href="/dist/#/roleta">Roleta</a>
     </li>
-    <li class="bold">
-        <a class="waves-effect waves-teal" href="/dist/#/sobre">Sobre</a>
+    <li class="bold" ng-class="{active: $root.menu == 'usuarios'}">
+        <a class="waves-effect waves-teal" href="/dist/#/usuarios">Usuários</a>
     </li>
+    <li class="bold" ng-class="{active: $root.menu == 'sobre'}">
+        <a class="waves-effect waves-teal" href="/dist/#/sobre">Sobre</a>
+    </li>    
 </ul>

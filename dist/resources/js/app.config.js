@@ -40,6 +40,11 @@
                         }
                     }
                 })
+                .state('base.usuarios', {
+                    url: "/usuarios",
+                    templateUrl: "/dist/resources/views/usuarios.html",
+                    controller: 'UsuariosController'
+                })            
                 .state('base.sobre', {
                     url: "/sobre",
                     templateUrl: "/dist/resources/views/sobre.html",

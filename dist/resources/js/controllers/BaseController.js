@@ -2,8 +2,8 @@
 
     var app = angular.module('PedroWeb.BaseController', []);
     app.controller('BaseController', [
-        '$scope',
-        function ($scope) {
+        '$scope', '$rootScope',
+        function ($scope, $rootScope) {
 
             //inicializando plugins
             $('.button-collapse').sideNav({
@@ -36,11 +36,15 @@
                     return false;
                 }
             }
+            
             if (is_touch_device()) {
                 $('#nav-mobile').css({
                     overflow: 'auto'
                 })
             }
+            
+            ////////////////// CONFIGURAÇÕES GLOBAIS
+            $rootScope.menu = "home";
 
         }
     ]);

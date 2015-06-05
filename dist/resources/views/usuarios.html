@@ -1,8 +1,8 @@
 <div id="index-banner" class="section no-pad-bot">
     <div class="container">
-        <h1 class="header center-on-small-only">Plugins</h1>
+        <h1 class="header center-on-small-only">Usuários</h1>
         <div class="row">
-            <h4 class="header col s12 light">Listagem e gerenciamento dos plugins do Pedro.</h4>
+            <h4 class="header col s12 light">Quem é ativo (ui) no gerenciamento web do Pedro.</h4>
         </div>
 
     </div>
@@ -12,7 +12,7 @@
 
     <div class="row">
         <div class="col l12">
-            <p class="">Temos {{plugins.length}} plugin(s) ao todo. <strong>Soa perigoso.</strong>
+            <p class="">Temos {{usuarios.length}} usuário(s) ao todo. <strong>Soa perigoso.</strong>
             </p>
         </div>
     </div>
@@ -24,20 +24,20 @@
                 <thead>
                     <tr>
                         <th>Nome</th>
-                        <th>Descrição</th>
+                        <th>Perfil</th>
                         <th>Status</th>
                     </tr>
                 </thead>
 
                 <tbody>
-                    <tr ng-repeat="plugin in plugins">
-                        <td>{{plugin.Nome}}</td>
-                        <td>{{plugin.Descricao}}</td>
+                    <tr ng-repeat="usuario in usuarios">
+                        <td>{{usuario.Username}}</td>
+                        <td>{{usuario.PerfilNome}}</td>
                         <td>
                             <div class="switch">
                                 <label>
                                     Desativado
-                                    <input type="checkbox" ng-checked="{{plugin.IsActive}}">
+                                    <input type="checkbox" ng-checked="{{usuario.IsActive}}">
                                     <span class="lever"></span> Ativado
                                 </label>
                             </div>
