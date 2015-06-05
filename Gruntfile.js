@@ -9,6 +9,7 @@ module.exports = function (grunt) {
                 files: {
                     'dist/resources/js/scripts.min.js': [
                         'bower_components/angular/angular.js',
+                        'bower_components/angular-route/angular-route.js',
                         'bower_components/jquery/dist/jquery.js',
                         'bower_components/materialize/dist/js/materialize.js',
                         'dist/resources/js/sidebar.js'

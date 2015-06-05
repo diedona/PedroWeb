@@ -12,36 +12,34 @@
 
 <body>
 
-    <nav class="light-blue lighten-1" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">BlaBot</a>
-            <ul class="right hide-on-med-and-down">
-                <li>
-                    <a href="#">Logar</a>
-                </li>
-            </ul>
-
-            <ul id="nav-mobile" class="side-nav">
-                <li>
-                    <a href="#">Link 1</a>
-                </li>
-                <li>
-                    <a href="#">Link 2</a>
-                </li>
-            </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-        </div>
-    </nav>
-
-    <div class="section no-pad-bot" id="index-banner">
+    <header>
+        
         <div class="container">
-            <br>
-            <br>
-            <h1 class="header center orange-text">"NINHO DE COBRAS"</h1>
-            <div class="row center">
-                <h5 class="header col s12 light">- LISPECTOR, Cocão</h5>
-            </div>
+            <a class="button-collapse top-nav waves-effect waves-light circle" data-activates="nav-mobile" href="#">
+                <i class="mdi-navigation-menu"></i>
+            </a>
         </div>
-    </div>
+        
+        <ul class="side-nav fixed" id="nav-mobile" style="width: 240px;">
+            <li class="logo">
+                <a class="brand-logo" href="#" id="logo-container">
+                    <img src="resources/img/logo.png" />
+                </a>
+            </li>
+            <li class="bold">
+                <a class="waves-effect waves-teal" href="about.html">About</a>
+            </li>
+            <li class="bold active">
+                <a class="waves-effect waves-teal" href="getting-started.html">Getting Started</a>
+            </li>
+            <li class="bold">
+                <a class="waves-effect waves-teal" href="http://materializecss.com/mobile.html">Mobile</a>
+            </li>
+            <li class="bold">
+                <a class="waves-effect waves-teal" href="showcase.html">Showcase</a>
+            </li>
+        </ul>
+    </header>
 
     <script src="resources/js/scripts.min.js"></script>
 
