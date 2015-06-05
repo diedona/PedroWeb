@@ -28,6 +28,18 @@
                     templateUrl: "/dist/resources/views/plugins.html",
                     controller: 'PluginsController'
                 })
+                .state('base.roleta', {
+                    url: "/roleta",
+                    templateUrl: "/dist/resources/views/roleta.html",
+                    controller: 'RoletaController',
+                    resolve: {
+                        CtrlOptions: function () {
+                            return {
+                                action: "list",
+                            };
+                        }
+                    }
+                })
                 .state('base.sobre', {
                     url: "/sobre",
                     templateUrl: "/dist/resources/views/sobre.html",
