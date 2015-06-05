@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html ng-app="PedroWeb">
 
 <head>
     <title>BlaBot | Web</title>
@@ -11,35 +11,14 @@
 </head>
 
 <body>
-
+    
     <header>
-        
-        <div class="container">
-            <a class="button-collapse top-nav waves-effect waves-light circle" data-activates="nav-mobile" href="#">
-                <i class="mdi-navigation-menu"></i>
-            </a>
-        </div>
-        
-        <ul class="side-nav fixed" id="nav-mobile" style="width: 240px;">
-            <li class="logo">
-                <a class="brand-logo" href="#" id="logo-container">
-                    <img src="resources/img/logo.png" />
-                </a>
-            </li>
-            <li class="bold">
-                <a class="waves-effect waves-teal" href="about.html">About</a>
-            </li>
-            <li class="bold active">
-                <a class="waves-effect waves-teal" href="getting-started.html">Getting Started</a>
-            </li>
-            <li class="bold">
-                <a class="waves-effect waves-teal" href="http://materializecss.com/mobile.html">Mobile</a>
-            </li>
-            <li class="bold">
-                <a class="waves-effect waves-teal" href="showcase.html">Showcase</a>
-            </li>
-        </ul>
+        <ui-view name="header"></ui-view>
     </header>
+    
+    <main>
+        <ui-view></ui-view>
+    </main>
 
     <script src="resources/js/scripts.min.js"></script>
 
