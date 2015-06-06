@@ -6,6 +6,11 @@
         function ($stateProvider, $urlRouterProvider)
         {
             $stateProvider
+                .state('login', {
+                    url: "/login",
+                    templateUrl: "/dist/resources/views/login.html",
+                    controller: 'LoginController'
+                })            
                 .state('base', {
                     abstract: true,
                     views: {

@@ -3,7 +3,7 @@
     var app = angular.module('PedroWeb', [
         'PedroWeb.Config', 'PedroWeb.BaseController', 'PedroWeb.HomeController',
         'PedroWeb.PluginsController', 'PedroWeb.RoletaController',
-        'PedroWeb.UsuariosController',
+        'PedroWeb.UsuariosController', 'PedroWeb.LoginController',
         'PedroWeb.SobreController'
     ]);
     
