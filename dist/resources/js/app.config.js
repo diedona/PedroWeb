@@ -40,6 +40,18 @@
                         }
                     }
                 })
+                .state('base.roleta-frases', {
+                    url: "/roleta/:caboclo",
+                    templateUrl: "/dist/resources/views/roleta-frases.html",
+                    controller: 'RoletaController',
+                    resolve: {
+                        CtrlOptions: function () {
+                            return {
+                                action: "frases",
+                            };
+                        }
+                    }
+                })            
                 .state('base.usuarios', {
                     url: "/usuarios",
                     templateUrl: "/dist/resources/views/usuarios.html",
