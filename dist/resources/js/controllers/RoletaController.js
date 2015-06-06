@@ -27,11 +27,30 @@
                 ];
             } else if (CtrlOptions.action == "frases") {
                 $scope.caboclo = $stateParams.caboclo;
+                $scope.NovaFrase = {};
+
                 $scope.frases = [
-                    {Id: 1, Frase: "AFF ISSO TÁ RUIM"},
-                    {Id: 2, Frase: "Não sou suas nega"},
-                    {Id: 3, Frase: "Uma metralhadora de merda que tá saindo da boca sua agora"}
+                    {
+                        Id: 1,
+                        Frase: "AFF ISSO TÁ RUIM"
+                    },
+                    {
+                        Id: 2,
+                        Frase: "Não sou suas nega"
+                    },
+                    {
+                        Id: 3,
+                        Frase: "Uma metralhadora de merda que tá saindo da boca sua agora"
+                    }
                 ];
+            }
+
+            $scope.SalvarFrase = function (NovaFrase, form) {
+                if (form.$valid) {
+                    console.log(NovaFrase);
+                    NovaFrase = {};
+                    $scope.NovaFrase = {};
+                }
             }
 
         }
