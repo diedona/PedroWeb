@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" ng-app="pedro-web">
 
 <head>
     <meta charset="utf-8">
@@ -8,17 +8,24 @@
 
     <title>PedroWeb | </title>
 
-    <!-- Bootstrap -->
     <link href="/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <link href="/bower_components/angular-bootstrap/ui-bootstrap-csp.css" rel="stylesheet" />
 </head>
 
 <body>
-    <h1>Oi mundo</h1>
+    
+    <div ui-view="header"></div>
+    <div ui-view="main"></div>
+    <div ui-view="footer"></div>
 
     <script src="/bower_components/angular/angular.js"></script>
     <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/app.config.js"></script>
+    <script src="scripts/app.run.js"></script>
+    <script src="scripts/controllers/BaseController.js"></script>
+    <script src="scripts/controllers/HomeController.js"></script>
 </body>
 
 </html>
