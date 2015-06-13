@@ -12,7 +12,9 @@
                 console.log('App run started ' + startDate.toISOString() + ' (from: ' + from + ')');
             };
 
-            $rootScope.LogStart($rootScope.startDate, 'RUN');
+            //$rootScope.LogStart($rootScope.startDate, 'RUN');
+            
+            $rootScope.activeMenu = "home";
 
         }
     ]);

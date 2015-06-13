@@ -5,7 +5,8 @@
         'pedro-web.config',
         'pedro-web.run',
         'pedro-web.controllers.base',
-        'pedro-web.controllers.home'
+        'pedro-web.controllers.home',
+        'pedro-web.controllers.roleta'
     ]);
 
 }())

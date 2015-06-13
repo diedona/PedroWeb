@@ -28,6 +28,11 @@
                 templateUrl: 'views/home.html',
                 controller: 'HomeController'
             })
+            .state('base.roleta', {
+                url: '/roleta',
+                templateUrl: 'views/roleta.html',
+                controller: 'RoletaController'
+            })            
             .state('login', {
                 url: '/login',
                 views: {
