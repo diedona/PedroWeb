@@ -9,14 +9,16 @@
     <title>PedroWeb | </title>
 
     <link href="/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
-    <link href="/bower_components/angular-bootstrap/ui-bootstrap-csp.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 
 <body>
-    
+
     <div ui-view="header"></div>
-    <div ui-view="main"></div>
-    <div ui-view="footer"></div>
+    <div class="container">
+        <div ui-view="main"></div>
+        <div ui-view="footer"></div>
+    </div>
 
     <script src="/bower_components/angular/angular.js"></script>
     <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
