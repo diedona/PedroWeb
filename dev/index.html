@@ -8,8 +8,10 @@
 
     <title>PedroWeb | </title>
 
+    <!-- build:style bundle -->
     <link href="/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
+    <!-- /build -->
 </head>
 
 <body>
@@ -20,14 +22,16 @@
         <div ui-view="footer"></div>
     </div>
 
+    <!-- build:script bundle -->
     <script src="/bower_components/angular/angular.js"></script>
     <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-    <script src="scripts/app.js"></script>
-    <script src="scripts/app.config.js"></script>
-    <script src="scripts/app.run.js"></script>
+    <script src="scripts/core/app.js"></script>
+    <script src="scripts/core/app.config.js"></script>
+    <script src="scripts/core/app.run.js"></script>
     <script src="scripts/controllers/BaseController.js"></script>
     <script src="scripts/controllers/HomeController.js"></script>
+    <!-- /build -->
 </body>
 
 </html>
