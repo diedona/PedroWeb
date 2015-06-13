@@ -1,14 +1,13 @@
 # PedroWeb
-Repositório para a interface Web do Bla Bot.
+Repositório para o frontend do Bla Bot.
 
 ## Tecnologias de FrontEnd
-- Materialize CSS
 - AngularJS
+- Angular-UI
+
+## Ferramentas
 - Grunt
 - Bower
-
-## Tecnologias de BackEnd
-- A definir
 
 Happy Coding
 
