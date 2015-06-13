@@ -1,19 +1,31 @@
 {
-  "name": "pedroweb",
-  "version": "0.0.1",
-  "description": "",
+  "name": "pedro-web",
+  "version": "1.0.0",
+  "description": "Repositório para a interface Web do Bla Bot.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diedona/PedroWeb.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diedona/PedroWeb/issues"
+  },
+  "homepage": "https://github.com/diedona/PedroWeb#readme",
   "dependencies": {
     "bower": "^1.4.1",
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.1",
     "grunt-contrib-copy": "^0.8.0",
     "grunt-contrib-cssmin": "^0.12.3",
-    "grunt-contrib-uglify": "^0.9.1"
+    "grunt-contrib-htmlmin": "^0.4.0",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-html-build": "^0.5.0"
   }
 }
