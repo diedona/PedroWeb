@@ -16,7 +16,7 @@ body {
     opacity: 0;
 }
 
-.ng-invalid {
+form.ng-submitted input.ng-invalid, form.ng-submitted select.ng-invalid {
     border: 1px solid red !important;
 }
 
