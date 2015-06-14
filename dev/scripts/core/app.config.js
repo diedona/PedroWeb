@@ -31,8 +31,39 @@
             .state('base.roleta', {
                 url: '/roleta',
                 templateUrl: 'views/roleta.html',
-                controller: 'RoletaController'
+                controller: 'RoletaController',
+                resolve: {
+                    CtrlOptions: function() {
+                        return {
+                            acao: "listar-roletas"
+                        };
+                    }
+                }                
+            })
+            .state('base.roleta-listar', {
+                url: '/roleta/:nome',
+                templateUrl: 'views/roleta-frases.html',
+                controller: 'RoletaController',
+                resolve: {
+                    CtrlOptions: function() {
+                        return {
+                            acao: "listar-frases"
+                        };
+                    }
+                }
             })            
+            .state('base.roleta-add-frase', {
+                url: '/roleta/:nome/adicionar',
+                templateUrl: 'views/roleta-frases-adicionar.html',
+                controller: 'RoletaController',
+                resolve: {
+                    CtrlOptions: function() {
+                        return {
+                            acao: "adicionar-frases"
+                        };
+                    }
+                }
+            })                        
             .state('login', {
                 url: '/login',
                 views: {
